@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ***Adding Outsourcing Link*** -->
-
     <!-- **For Symbols** -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -21,6 +19,22 @@
     <!-- ***Title*** -->
     <title>Shivam Singhal | Portfolio</title>
 
+    <!-- Link JavaScript For Preloader -->
+    <script>
+        window.onload = function () {
+            document.getElementById('preloader').style.display = "none";
+            document.getElementById('nav').className = "";
+            document.getElementById('home').className = "";
+            document.getElementById('about').className = "";
+            document.getElementById('skills').className = "";
+            document.getElementById('qualification').className = "";
+            document.getElementById('services').className = "";
+            document.getElementById('portfolio').className = "";
+            document.getElementById('contact_me').className = "";
+            document.getElementById('footer').className = "";
+        }
+    </script>
+
     <!-- ***Favicon*** -->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
@@ -29,6 +43,9 @@
 </head>
 
 <body id="body">
+    <!-- Preloader -->
+    <div id="preloader"><img src="assets/img/preloader.gif" alt="preloader"></div>
+
     <!-- ***ViewMore Box*** -->
 
     <!-- Portfolio Websites -->
@@ -104,7 +121,7 @@
 
     <!-- ***Header Starting*** -->
     <header>
-        <nav id="nav">
+        <nav class="hide" id="nav">
             <div class="top-nav">
                 <div class="left">
                     <a href="index.html">Shivam</a>
@@ -168,15 +185,15 @@
     <!-- ***Sections Starting*** -->
 
     <!-- First Section -->
-    <section id="home">
+    <section class="hide" id="home">
         <div class="container container-home">
             <div class="left-home">
-                <span><a href="https://www.linkedin.com/in/shivamsinghal160" target="_blank"><i
-                            class="uil uil-linkedin-alt"></i></a></span>
-                <span><a href="https://www.instagram.com/shivamsinghal160" target="_blank"><i
-                            class="uil uil-instagram"></i></a></span>
-                <span><a href="https://www.github.com/shivamsinghal160" target="_blank"><i
-                            class="uil uil-github-alt"></i></a></span>
+                <a href="https://www.linkedin.com/in/shivamsinghal160" target="_blank"><span><i
+                            class="uil uil-linkedin-alt"></i></span></a>
+                <a href="https://www.instagram.com/shivamsinghal160" target="_blank"><span><i
+                            class="uil uil-instagram"></i></span></a>
+                <a href="https://www.github.com/shivamsinghal160" target="_blank"><span><i
+                            class="uil uil-github-alt"></i></span></a>
             </div>
             <div class="which-down-home">
                 <div class="middle-home">
@@ -216,7 +233,7 @@
     </section>
 
     <!-- Second Section -->
-    <section id="about">
+    <section class="hide" id="about">
         <div class="container-about container">
             <div class="top-section-part">
                 <h3>About Me</h3>
@@ -253,7 +270,7 @@
     </section>
 
     <!-- Third Section -->
-    <section id="skills">
+    <section class="hide" id="skills">
         <div class="container-skills container">
             <div class="top-section-part">
                 <h3>Skills</h3>
@@ -420,7 +437,7 @@
     </section>
 
     <!-- Forth Section -->
-    <section id="qualification">
+    <section class="hide" id="qualification">
         <div class="container-qualification container">
             <div class="top-section-part">
                 <h3>Qualifications</h3>
@@ -562,7 +579,7 @@
 
     <!-- Fifth Section -->
 
-    <section id="services">
+    <section class="hide" id="services">
         <div class="container-services container">
             <div class="top-section-part services-top-part">
                 <h3>Services</h3>
@@ -590,7 +607,7 @@
 
     <!-- Sixth Section -->
 
-    <section id="portfolio">
+    <section class="hide" id="portfolio">
         <div class="container-portfolio container">
             <div class="top-section-part">
                 <h3>Portfolio</h3>
@@ -666,7 +683,7 @@
     </section>
 
     <!-- Seventh Section -->
-    <section id="contact_me">
+    <section class="hide" id="contact_me">
         <div class="container-contact container">
             <div class="top-section-part">
                 <h3>Contact Me</h3>
@@ -729,7 +746,7 @@
     </section>
 
     <!-- ***Footer Starting*** -->
-    <footer>
+    <footer class="hide" id="footer">
         <div class="top-footer">
             <div class="left-footer">
                 <h1>Shivam</h1>

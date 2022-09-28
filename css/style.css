@@ -142,6 +142,17 @@ a {
     }
 }
 
+/* Preloader CSS */
+#preloader{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+#preloader img{
+    width:80px;
+} 
 
 /* ***Header CSS*** */
 
@@ -624,6 +635,9 @@ h4 {
     color: var(--text-color);
 }
 
+.qualification_details{
+    justify-content: flex-end;
+}
 
 /* ****Services & Portfolio CSS**** */
 
@@ -926,6 +940,12 @@ footer{
     text-align: center;
 }
 
+/* CSS Media Query For Above 1400px Width-Device */
+@media screen and (min-width: 1400px){
+    .blob{
+        width:18rem;
+    }
+}
 
 /* CSS Media Query For Below 1100px Width-Device */
 @media screen and (max-width: 1100px) {
@@ -993,6 +1013,9 @@ footer{
     }
 
     /* About */
+    .top-section-part{
+        margin: 6vh 0;
+    }
     .bottom-about{
         flex-direction: column;
         justify-content: center;
@@ -1026,6 +1049,12 @@ footer{
     }
 
     /* Qualifications */
+    .container-qualification{
+        /* margin-top: 250px; */
+        padding-top: 300px;
+        height: 900px;
+    }
+
     .qualification_name,.qualification_place,.qualification_time{
         width: 100px;
     }
@@ -1036,14 +1065,16 @@ footer{
 
     .left-qualification{
         padding-right:3vw;
+
     }
 
     .right-qualification{
         padding-left:3vw;
+        margin-top: 210px;
     }
 
     .right-wrap-qualification{
-        margin-bottom: 80px;
+        margin-bottom: 262px;
     }
 
     .bottom-qualification{
@@ -1051,9 +1082,12 @@ footer{
     }
 
     .left-wrap-qualification{
-        margin-bottom:30px;
+        margin-bottom:213px;
     }
 
+    .line{
+        height: 180px;
+    }
 
     /* Services */
     .cards{
