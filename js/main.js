@@ -1,15 +1,15 @@
 // Theme Changer 
 
-let moon = document.getElementById('moon');
-let sun = document.getElementById('sun');
+// let moon = document.getElementById('moon');
+// let sun = document.getElementById('sun');
 
-moon.addEventListener('click', ()=>{
-    if(moon.className == "uil uil-sun"){
-        moon.className = "uil uil-moon";
-    }else{
-        moon.className = "uil uil-sun";
-    }
-})
+// moon.addEventListener('click', ()=>{
+//     if(moon.className == "uil uil-sun"){
+//         moon.className = "uil uil-moon";
+//     }else{
+//         moon.className = "uil uil-sun";
+//     }
+// })
 
 
 
