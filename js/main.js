@@ -1,15 +1,18 @@
 // Theme Changer 
 
-// let moon = document.getElementById('moon');
-// let sun = document.getElementById('sun');
+let moon = document.getElementById('moon');
+let sun = document.getElementById('sun');
+let body = document.getElementById('body');
 
-// moon.addEventListener('click', ()=>{
-//     if(moon.className == "uil uil-sun"){
-//         moon.className = "uil uil-moon";
-//     }else{
-//         moon.className = "uil uil-sun";
-//     }
-// })
+moon.addEventListener('click', ()=>{
+    if(moon.className == "uil uil-sun"){
+        moon.className = "uil uil-moon";
+        body.className = "";
+    }else{
+        moon.className = "uil uil-sun";
+        body.className = "dark-theme";
+    }
+})
 
 
 
