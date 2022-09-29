@@ -526,7 +526,7 @@ h4 {
 }
 
 .sub-head {
-    color: var(--text-color);
+    color: var(--text-color-light);
 }
 
 .top-skill {
@@ -826,7 +826,7 @@ h4 {
 .right-slider{
     font-size: 4rem;
     padding: 0 3vw;
-    color: var(--text-color);
+    color: var(--span-color);
     cursor: pointer;
 }
 
@@ -917,7 +917,7 @@ h4 {
 }
 
 .left-contact a{
-    color: var(--text-color-li);
+    color: var(--text-color-light);
 }
 
 .right-contact{
@@ -1079,6 +1079,10 @@ footer{
     .about-img{
         width: 300px;
         margin:0;
+    }
+
+    .btn-download {
+        width: 115px;
     }
 
     .about-summary{
