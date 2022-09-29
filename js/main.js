@@ -1,16 +1,16 @@
 // Theme Changer 
 
-let sun = document.getElementById('sun');
+let moon = document.getElementById('moon');
 let body = document.getElementById('body');
 let uil = document.getElementsByClassName('uil::before')
 
-sun.addEventListener('click', ()=>{
-    if(sun.className == "uil uil-sun"){
-        sun.className = "uil uil-moon";
+moon.addEventListener('click', ()=>{
+    if(moon.className == "uil uil-sun"){
+        moon.className = "uil uil-moon";
         body.className = "";
 
     }else{
-        sun.className = "uil uil-sun";
+        moon.className = "uil uil-sun";
         body.className = "dark-theme";
     }
 })
