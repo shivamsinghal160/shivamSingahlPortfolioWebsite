@@ -175,6 +175,10 @@ body.dark-theme{
 
 /* ***Header CSS*** */
 
+.uil::before{
+    font-weight:var(--font-semi-bold);
+}
+
 header {
     position: sticky;
     top: 0px;
@@ -234,8 +238,8 @@ nav span {
     padding: 0 5px;
 }
 
-.uil::before {
-    font-weight: var(--font-semi-bold) !important;
+nav .uil::before{
+    font-weight: var(--font-semi-bold);
 }
 
 /* Sections CSS */
@@ -265,6 +269,9 @@ nav span {
 .left-home span:hover {
     cursor: pointer;
     color: var(--first-color);
+}
+.left-home .uil::before{
+    font-weight: var(--normal-font-size);
 }
 
 .which-down-home{
@@ -425,7 +432,7 @@ h4 {
 .about-mini {
     display: flex;
     justify-content: space-evenly;
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 .minis {
@@ -483,6 +490,10 @@ h4 {
 
 .skills > span{
     color: var(--first-color);
+}
+
+.skills .uil::before{
+    font-weight: var(--normal-font-size);
 }
 
 .skills-name {
@@ -772,6 +783,10 @@ h4 {
     cursor: pointer;
 }
 
+.uil-check-circle{
+    color: var(--first-color);
+}
+
 .summary-viewmore {
     margin: 4vh 2vw;
 }
@@ -999,6 +1014,14 @@ footer{
 @media screen and (max-width: 1100px) {
     .web-nav{
         display: none;
+    }
+
+    nav{
+        padding: 3vh 10vw 2vh 10vw;
+    }
+
+    nav .uil::before{
+        font-size: larger;
     }
     
     .mobile-nav{
