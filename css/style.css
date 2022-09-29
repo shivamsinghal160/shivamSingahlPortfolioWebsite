@@ -1019,10 +1019,6 @@ footer{
     nav{
         padding: 3vh 10vw 2vh 10vw;
     }
-
-    nav .uil::before{
-        font-size: larger;
-    }
     
     .mobile-nav{
         display: block;
