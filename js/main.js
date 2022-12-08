@@ -4,14 +4,22 @@ let moon = document.getElementById('moon');
 let body = document.getElementById('body');
 let uil = document.getElementsByClassName('uil::before')
 
+// Setting theme in localStorage
+if(localStorage.getItem('theme') == 'dark'){
+    moon.className = "uil uil-sun";
+    body.className = "dark-theme";
+}
+
 moon.addEventListener('click', ()=>{
     if(moon.className == "uil uil-sun"){
         moon.className = "uil uil-moon";
         body.className = "";
+        localStorage.setItem('theme', 'light');
 
     }else{
         moon.className = "uil uil-sun";
         body.className = "dark-theme";
+        localStorage.setItem('theme', 'dark');
     }
 })
 

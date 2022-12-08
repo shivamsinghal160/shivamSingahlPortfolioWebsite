@@ -57,7 +57,7 @@ a {
 .vis-hide-nav {
     height: 0 !important;
     opacity: 0 !important;
-    transform: translateY(-30vh) !important;
+    transform: translateY(-40vh) !important;
 }
 
 .boxShadow {
