@@ -3,12 +3,16 @@
 let moon = document.getElementById('moon');
 let body = document.getElementById('body');
 let uil = document.getElementsByClassName('uil::before')
+let date = new Date();
 
-// Setting theme in localStorage
-if(localStorage.getItem('theme') == 'dark'){
+// Setting theme in localStorage & According to Day/Night
+
+if(localStorage.getItem('theme') == 'dark' || date.getHours() >= 18 || (0<=date.getHours() && date.getHours()<6)){
     moon.className = "uil uil-sun";
     body.className = "dark-theme";
 }
+
+// Theme - Dark/Light OnClick Function Enabled
 
 moon.addEventListener('click', ()=>{
     if(moon.className == "uil uil-sun"){
